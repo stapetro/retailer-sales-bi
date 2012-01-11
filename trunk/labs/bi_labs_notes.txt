@@ -1,0 +1,36 @@
+------------------------------	
+04 Jan 2011
+------------------------------
+QlikView
+------------------------------
+ctrl + T - visualizse tables
+ctrl + R - reload data from data source
+
+add new sheet
+	Layout -> Add Sheet...
+	Objects -> Chart
+
+Clear - clear filters
+------------------------------	
+Management Dashboard
+
+Dimensions
+	Shop, ProductGroup, ProductSubGroup, Product
+	
+Measurements
+	SalesQty(sales quantity)
+	SalesPrice
+	DstPrice(DistributionPrice)
+
+http://www.qlikview.com/us/services/training/free-training
+------------------------------	
+11 Jan 2012
+------------------------------	
+Sheet Object Properties -> Tab Number -> Fix to
+wrong:
+(sum(if(SalesDate=$(maxdate),Qty*SalesPrice))-sum(if(SalesDate=($(maxdate)-1), Qty*SalesPrice)))/sum(if(SalesDate=($(maxdate)-1), Qty*SalesPrice))
+
+correct:
+(sum(if(MonthNumber=$(maxmonth),Qty*SalesPrice))-sum(if(MonthNumber=($(maxmonth)-1), Qty*SalesPrice)))/sum(if(MonthNumber=($(maxmonth)-1), Qty*SalesPrice))
+
+За другия път (18 Jan 2012) темата ще е "Set Analysis" в QlikView и има ли почва то у нас
