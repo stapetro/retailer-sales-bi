@@ -1,0 +1,1 @@
+﻿The Qlikview applications are developed for screen resolution 1280x800 pixels.
