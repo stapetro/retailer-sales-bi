@@ -41,3 +41,29 @@ correct:
  - изпитът ще представлява тест (от материали на лекциите) 40 % и проект 60 %;
  - колегата на асистента показа как да си интегрираме карта в приложението, като в таблицата shops (ot .xls файла) добавихме две нови колони "latitude" и "longtitude" за координати на магазините;
  - в инсталационната директория на QlikView има поддиректория documents, в която има demo-та, от които може да погледнеш пример за това (за 11-тас версия е хубаво да погледнеш в what's new)
+------------------------------	
+11 Feb 2012
+------------------------------	 
+ /* Ellie's notes
+ProductsQty:
+JOIN (Products)
+LOAD
+	ItemCode,
+	ProdName,
+	SaleDate,
+	Qty
+Resident Sales
+WHERE Qty = 0.00;
+
+
+REGISTRATION_FLAGS_2B:
+LOAD RPT9_ACCOUNT
+ ,RPT9_CAT2
+RESIDENT REGISTRATION_FLAGS;
+
+LEFT JOIN (REGISTRATION_FLAGS_2B)
+LOAD RPT9_ACCOUNT
+ ,RPT9_CAT2_TMP
+RESIDENT REGISTRATION_FLAGS_2A
+WHERE RPT9_CAT2 <> RPT9_CAT2_TMP;
+*/
