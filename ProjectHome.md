@@ -1,0 +1,1 @@
+Application contains Management and Operational Dashboards. It is developed for educational purposes only.
